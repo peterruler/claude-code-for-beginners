@@ -35,7 +35,7 @@ This document lists and briefly describes every prompt (specification) that has 
 
 ---
 ## 4️⃣ SPEC4.md
-**Location:** `Specs/SPEC4.md tracker-04
+**Location:** `Specs/SPEC4.md tracker-04`
 
 > *“In the tracker directory. Build a personal habit tracker as a single HTML file with inline CSS and JavaScript. I want to add habits with a name and a target frequency, check them off each day, see a weekly grid showing my progress, and a streak counter for each habit. Save everything in localStorage so my data survives a browser refresh. Make it look clean and modern —light background, soft shadows, rounded corners.”*
 
