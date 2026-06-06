@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background: #f9f9f9;
+  color: #222;
+  width: 300px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #4a6cf7;
+}
+
+#summary {
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}

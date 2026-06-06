@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Habit Tracker</title>
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --card-bg: #fff;
+      --primary: #4a6cf7;
+      --accent: #ff8800;
+      --text: #333;
+      --radius: 0.6rem;
+      --shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 900px;
+      width: 100%;
+    }
+    h1 { text-align: center; margin-bottom: 1rem; }
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .form-group { display: flex; gap: 0.5rem; margin-bottom: 0.5rem; }
+    .form-group input, .form-group button {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: var(--radius);
+    }
+    .form-group button { background: var(--primary); color: #fff; border: none; cursor: pointer; }
+    .habit {
+      margin-bottom: 1rem;
+    }
+    .habit-header {
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .habit-name { font-weight: 600; }
+    .streak { font-size: 0.9rem; color: var(--accent); }
+    .grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin-top: 0.5rem; }
+    .grid label { display: block; text-align: center; font-size: 0.75rem; }
+    .grid input[type="checkbox"] { width: 1rem; height: 1rem; margin: 0 auto; }
+    .add-habit { margin-top: 1rem; }
+    .footer { text-align: center; font-size: 0.8rem; color: #777; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Personal Habit Tracker</h1>
+    <div class="card">
+      <h2>Add a habit</h2>
+      <div class="form-group">
+        <input type="text" id="habitName" placeholder="Habit name" />
+        <input type="number" id="habitFreq" placeholder="Target per week" min="1" max="7" />
+        <button id="addBtn">Add</button>
+      </div>
+    </div>
+
+    <div id="habitsContainer"></div>
+
+    <div class="footer">© 2026 Peter Strössler – built with vanilla JS &amp; localStorage</div>
+  </div>
+
+  <script>
+    // ------- Utility helpers -------
+    const today = () => new Date().toISOString().split('T')[0];
+    const startOfWeek = (dateStr) => {
+      const d = new Date(dateStr);
+      const day = d.getDay(); // 0 = Sun, 1 = Mon ...
+      const diff = (day + 6) % 7; // shift so Monday = 0
+      d.setDate(d.getDate() - diff);
+      return d.toISOString().split('T')[0];
+    };
+    const addDays = (dateStr, n) => {
+      const d = new Date(dateStr);
+      d.setDate(d.getDate() + n);
+      return d.toISOString().split('T')[0];
+    };
+
+    // ------- Data handling -------
+    const STORAGE_KEY = 'habitTrackerData';
+    const loadData = () => JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+    const saveData = (data) => localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+
+    // ------- Rendering -------
+    const render = () => {
+      const container = document.getElementById('habitsContainer');
+      container.innerHTML = '';
+      const habits = loadData();
+      habits.forEach((habit, idx) => {
+        const card = document.createElement('div');
+        card.className = 'card habit';
+        // header
+        const header = document.createElement('div');
+        header.className = 'habit-header';
+        const title = document.createElement('span');
+        title.className = 'habit-name';
+        title.textContent = habit.name + ` (target: ${habit.target}/week)`;
+        const streak = document.createElement('span');
+        streak.className = 'streak';
+        streak.textContent = `Streak: ${habit.streak}`;
+        const delBtn = document.createElement('button');
+        delBtn.textContent = '✖';
+        delBtn.style.border = 'none';
+        delBtn.style.background = 'transparent';
+        delBtn.style.cursor = 'pointer';
+        delBtn.title = 'Delete habit';
+        delBtn.onclick = () => {
+          const data = loadData();
+          data.splice(idx, 1);
+          saveData(data);
+          render();
+        };
+        header.append(title, streak, delBtn);
+        card.appendChild(header);
+        // weekly grid
+        const grid = document.createElement('div');
+        grid.className = 'grid';
+        const weekStart = startOfWeek(today());
+        for (let i = 0; i < 7; i++) {
+          const dayDate = addDays(weekStart, i);
+          const checkbox = document.createElement('input');
+          checkbox.type = 'checkbox';
+          checkbox.checked = habit.history?.[dayDate] || false;
+          checkbox.onchange = (e) => {
+            const data = loadData();
+            const h = data[idx];
+            if (!h.history) h.history = {};
+            h.history[dayDate] = e.target.checked;
+            // recompute streak (consecutive days up to today)
+            let streakCount = 0;
+            for (let d = today(); ; d = addDays(d, -1)) {
+              if (h.history[d]) streakCount++; else break;
+            }
+            h.streak = streakCount;
+            saveData(data);
+            render();
+          };
+          const label = document.createElement('label');
+          const dayName = new Date(dayDate).toLocaleDateString('en-US', { weekday: 'short' });
+          label.append(dayName, checkbox);
+          grid.appendChild(label);
+        }
+        card.appendChild(grid);
+        container.appendChild(card);
+      });
+    };
+
+    // ------- Add habit -------
+    document.getElementById('addBtn').addEventListener('click', () => {
+      const name = document.getElementById('habitName').value.trim();
+      const target = parseInt(document.getElementById('habitFreq').value, 10);
+      if (!name || isNaN(target) || target < 1) {
+        alert('Please enter a valid name and target (>=1).');
+        return;
+      }
+      const data = loadData();
+      data.push({ name, target, streak: 0, history: {} });
+      saveData(data);
+      document.getElementById('habitName').value = '';
+      document.getElementById('habitFreq').value = '';
+      render();
+    });
+
+    // initial render
+    render();
+  </script>
+</body>
+</html>

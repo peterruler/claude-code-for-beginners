@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Summarize Selection",
+  "description": "Summarizes highlighted text (3‑sentence AI summary) via OpenAI",
+  "version": "1.0",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://localhost:11434/*",
+    "https://api.openai.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Summarize"
+  }
+}

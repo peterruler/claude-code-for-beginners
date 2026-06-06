@@ -1,0 +1,1 @@
+Plan a Python script that watches a folder for new images. When a new image appears, it sends it to the openAi Vision API and gets back a social media caption - one version for instagram, one for LinkedIn. Save both captions to a .txt file with the same name as the image. List every dependency and every step before writing any code.
