@@ -1,0 +1,406 @@
+2026-06-06 21:26:27,325 INFO Watching input for new images…
+2026-06-06 21:27:03,371 INFO New image detected: input/Bildschirmfoto vom 2026-05-31 17-05-10.png
+2026-06-06 21:27:03,890 ERROR Failed to read image input/Bildschirmfoto vom 2026-05-31 17-05-10.png: cannot write mode RGBA as JPEG
+2026-06-06 21:27:03,890 INFO New image detected: input/Bildschirmfoto vom 2026-05-31 17-08-17.png
+2026-06-06 21:27:04,399 ERROR Failed to read image input/Bildschirmfoto vom 2026-05-31 17-08-17.png: cannot write mode RGBA as JPEG
+2026-06-06 21:27:04,399 INFO New image detected: input/buttonsTextfields.png
+2026-06-06 21:27:04,904 ERROR Failed to read image input/buttonsTextfields.png: cannot write mode RGBA as JPEG
+2026-06-06 21:27:04,904 INFO New image detected: input/claude-code.png
+2026-06-06 21:27:05,406 ERROR Failed to read image input/claude-code.png: cannot write mode RGBA as JPEG
+2026-06-06 21:27:05,407 INFO New image detected: input/image01.png
+2026-06-06 21:27:05,924 ERROR Failed to read image input/image01.png: cannot write mode RGBA as JPEG
+2026-06-06 21:27:05,925 INFO New image detected: input/image02.png
+2026-06-06 21:27:06,435 ERROR Failed to read image input/image02.png: cannot write mode RGBA as JPEG
+2026-06-06 21:27:06,435 INFO New image detected: input/image-results.png
+2026-06-06 21:27:06,942 ERROR Failed to read image input/image-results.png: cannot write mode RGBA as JPEG
+2026-06-06 21:27:06,942 INFO New image detected: input/landing-page.png
+2026-06-06 21:27:07,451 ERROR Failed to read image input/landing-page.png: cannot write mode RGBA as JPEG
+2026-06-06 21:27:07,452 INFO New image detected: input/rag-eval.png
+2026-06-06 21:27:07,970 ERROR Failed to read image input/rag-eval.png: cannot write mode RGBA as JPEG
+2026-06-06 21:27:43,261 INFO Received signal 2 – stopping…
+2026-06-06 21:27:43,262 INFO Watcher stopped.
+2026-06-06 21:39:01,028 INFO Watching input for new images…
+2026-06-06 21:39:53,336 INFO New image detected: input/Bildschirmfoto vom 2026-05-31 17-05-10.png
+2026-06-06 21:39:53,857 ERROR OpenAI API error (attempt 1): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:39:54,857 ERROR OpenAI API error (attempt 2): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:39:56,857 ERROR OpenAI API error (attempt 3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:00,858 ERROR Captions generation failed – moved input/Bildschirmfoto vom 2026-05-31 17-05-10.png to output/failed/Bildschirmfoto vom 2026-05-31 17-05-10.png
+2026-06-06 21:40:00,858 INFO New image detected: input/Bildschirmfoto vom 2026-05-31 17-08-17.png
+2026-06-06 21:40:01,369 ERROR OpenAI API error (attempt 1): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:02,370 ERROR OpenAI API error (attempt 2): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:04,370 ERROR OpenAI API error (attempt 3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:08,371 ERROR Captions generation failed – moved input/Bildschirmfoto vom 2026-05-31 17-08-17.png to output/failed/Bildschirmfoto vom 2026-05-31 17-08-17.png
+2026-06-06 21:40:08,371 INFO New image detected: input/buttonsTextfields.png
+2026-06-06 21:40:08,876 ERROR OpenAI API error (attempt 1): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:09,877 ERROR OpenAI API error (attempt 2): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:11,878 ERROR OpenAI API error (attempt 3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:15,879 ERROR Captions generation failed – moved input/buttonsTextfields.png to output/failed/buttonsTextfields.png
+2026-06-06 21:40:15,879 INFO New image detected: input/claude-code.png
+2026-06-06 21:40:16,382 ERROR OpenAI API error (attempt 1): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:17,383 ERROR OpenAI API error (attempt 2): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:19,383 ERROR OpenAI API error (attempt 3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:23,384 ERROR Captions generation failed – moved input/claude-code.png to output/failed/claude-code.png
+2026-06-06 21:40:23,384 INFO New image detected: input/image01.png
+2026-06-06 21:40:23,903 ERROR OpenAI API error (attempt 1): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:24,904 ERROR OpenAI API error (attempt 2): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:26,905 ERROR OpenAI API error (attempt 3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:30,906 ERROR Captions generation failed – moved input/image01.png to output/failed/image01.png
+2026-06-06 21:40:30,907 INFO New image detected: input/image02.png
+2026-06-06 21:40:31,419 ERROR OpenAI API error (attempt 1): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:32,420 ERROR OpenAI API error (attempt 2): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:34,421 ERROR OpenAI API error (attempt 3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:38,422 ERROR Captions generation failed – moved input/image02.png to output/failed/image02.png
+2026-06-06 21:40:38,422 INFO New image detected: input/image-results.png
+2026-06-06 21:40:38,930 ERROR OpenAI API error (attempt 1): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:39,930 ERROR OpenAI API error (attempt 2): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:41,931 ERROR OpenAI API error (attempt 3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:45,931 ERROR Captions generation failed – moved input/image-results.png to output/failed/image-results.png
+2026-06-06 21:40:45,931 INFO New image detected: input/landing-page.png
+2026-06-06 21:40:46,443 ERROR OpenAI API error (attempt 1): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:47,444 ERROR OpenAI API error (attempt 2): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:49,444 ERROR OpenAI API error (attempt 3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:53,445 ERROR Captions generation failed – moved input/landing-page.png to output/failed/landing-page.png
+2026-06-06 21:40:53,445 INFO New image detected: input/rag-eval.png
+2026-06-06 21:40:53,968 ERROR OpenAI API error (attempt 1): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:54,969 ERROR OpenAI API error (attempt 2): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:40:56,969 ERROR OpenAI API error (attempt 3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:41:00,970 ERROR Captions generation failed – moved input/rag-eval.png to output/failed/rag-eval.png
+2026-06-06 21:42:51,345 INFO New image detected: input/pexels-david-hitchcock-2160795853-37001452.jpg
+2026-06-06 21:42:52,467 ERROR OpenAI API error (attempt 1): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:42:53,469 ERROR OpenAI API error (attempt 2): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:42:55,471 ERROR OpenAI API error (attempt 3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:42:59,471 ERROR Captions generation failed – moved input/pexels-david-hitchcock-2160795853-37001452.jpg to output/failed/pexels-david-hitchcock-2160795853-37001452.jpg
+2026-06-06 21:42:59,483 INFO New image detected: input/pexels-njeromin-37570571.jpg
+2026-06-06 21:43:00,074 ERROR OpenAI API error (attempt 1): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:43:01,075 ERROR OpenAI API error (attempt 2): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:43:03,077 ERROR OpenAI API error (attempt 3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:43:07,078 ERROR Captions generation failed – moved input/pexels-njeromin-37570571.jpg to output/failed/pexels-njeromin-37570571.jpg
+2026-06-06 21:43:07,091 INFO New image detected: input/pexels-abuti-engidashet-2941405-15228018.jpg
+2026-06-06 21:43:07,722 ERROR OpenAI API error (attempt 1): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:43:08,723 ERROR OpenAI API error (attempt 2): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:43:10,725 ERROR OpenAI API error (attempt 3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2026-06-06 21:43:14,725 ERROR Captions generation failed – moved input/pexels-abuti-engidashet-2941405-15228018.jpg to output/failed/pexels-abuti-engidashet-2941405-15228018.jpg

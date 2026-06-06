@@ -5,7 +5,7 @@ This document lists and briefly describes every prompt (specification) that has 
 ---
 
 ## 1️⃣ SPEC.md
-**Location:** `SPEC.md`
+**Location:** `Specs/SPEC.md and landing-page-01`
 
 > *“Plan a personal landing page for me. My old homepage is in the draft folder, you can take hero image and personal info from the 2026 Cv PDF and take intro for e.g. from the index.html file. Choose a dark theme, with blue color and orange accent color. The logo is on the index.html page. My name is Peter Strössler, I'm an AI software engineer. I want a hero section with aheadline and a CTA button, a short about sectoin, and a contact form at the bottom. Use HTML, CSS and vanilla Javascript. - no frameworks. List every file you'll create before writing a single file.”**
 
@@ -14,7 +14,7 @@ This document lists and briefly describes every prompt (specification) that has 
 ---
 
 ## 2️⃣ SPEC2.md
-**Location:** `SPEC2.md`
+**Location:** `Specs/SPEC2.md and extension-02`
 
 > *“In the extension folder, build a chrome extension. When I highlight text on any webpage and right‑click, I want context menu option called 'Summarize.' Clicking it opens a small popup with three‑sentence AI summary of the selected text using the OpenAI API. Show me every file I need.”*
 
@@ -26,8 +26,16 @@ This document lists and briefly describes every prompt (specification) that has 
 
 ---
 
-## 3️⃣ SPEC4.md
-**Location:** `SPEC4.md`
+## 3️⃣ SPEC3.md
+**Location:** `Specs/SPEC3.md and python-03`
+
+> *“Plan a Python script that watches a folder for new images. When a new image appears, it sends it to the OpenAI Vision API and gets back a social media caption - one version for instagram, one for LinkedIn. Save both captions to a .txt file with the same name as the image. List every dependency and every step before writing any code.”*
+
+**Result:** (Not yet implemented) – exercise described in `SPEC3.md`.
+
+---
+## 4️⃣ SPEC4.md
+**Location:** `Specs/SPEC4.md tracker-04
 
 > *“In the tracker directory. Build a personal habit tracker as a single HTML file with inline CSS and JavaScript. I want to add habits with a name and a target frequency, check them off each day, see a weekly grid showing my progress, and a streak counter for each habit. Save everything in localStorage so my data survives a browser refresh. Make it look clean and modern —light background, soft shadows, rounded corners.”*
 
