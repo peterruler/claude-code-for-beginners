@@ -3,4 +3,4 @@ Along the way, you’ll learn how to use Opus and Sonnet together, debug with sc
 
 [youtube tutorial url](https://www.youtube.com/watch?v=RywmhLTFeFk) 
 
-All the files in this repo were generated using local models. Check the _Projects folder for the commands. Choose a smaller model e.g. oss-gpt:20b according to your system capabilities.
+All the files in this repo were generated using local models. Check the _Project folder for the commands. Choose a smaller model e.g. gpt-oss:20b according to your system capabilities.
